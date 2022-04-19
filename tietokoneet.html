@@ -39,6 +39,37 @@ li a:hover {
   margin-top: 650px;
   background-color: gray;
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: 15px;
+  text-align: center;
+  font-family: arial;
+  padding: 20px;
+  float:left;
+}
+
+.price {
+  color: black;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 9px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 11px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
 </style>
 
 <body>
@@ -49,6 +80,14 @@ li a:hover {
 <ul>
   <li><a class="active" href="verkkokauppa.html" style="float:left;">Koti</a></li>
 </ul>
+
+<div class="card">
+  <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>Hyvä tietokone</h2>
+  <p class="price">$99.99</p>
+  <p>Hyvä opiskeluun/töihin.</p>
+  <p><button>Lisää koriin</button></p>
+</div>
 
 <div class="bottomnav">
     <h2>Yhteystiedot</h2>
