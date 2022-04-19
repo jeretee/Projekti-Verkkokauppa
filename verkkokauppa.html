@@ -15,16 +15,20 @@ body {
   overflow: hidden;
   background-color: gray;
 }
-  
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
 }
 
-li a {
+a {
   display: block;
   color: white;
   text-align: center;
@@ -32,11 +36,11 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+a:hover {
   background-color: #111;
 }
 
-li button {
+button {
   display: block;
   color: white;
   text-align: center;
@@ -45,16 +49,35 @@ li button {
   background-color: black;
 }
 
-li button:hover {
-  background-color: #111;
-}
-
 .bottomnav {
   overflow: hidden;
   margin-top: 650px;
   background-color: gray;
 }
 
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: gray;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: green;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
 </style>
 </head>
 <body>
@@ -63,20 +86,19 @@ li button:hover {
   <h2>Tietokonekauppa <img src="tietokone.png" style="width:50px;height:50px;float:right;"></h2>
 </div>
 
-<ul>
-  <li><a class="active" href="#home" style="float:left;">Koti</a></li>
-  <li><a href="yhteystiedot.html" style="float:left;">INFO</a></li>
-  <li><button onclick="myFunction()" style="float:left;">Kategoria</button></li>
-  <li><a href="kirjautuminen.html" style="float:right;">Kirjaudu</a></li>
-  <li><a href="ostoskori.html" style="float:right;">Ostoskori</a></li>
-</ul>
-
-<div id="myDIV" style="display:none;">
-	<ul>
-		<li><a href="" style="float:left;">Tietokoneet</a></li>
-		<li><a href="" style="float:left;">Hiiret</a></li>
-		<li><a href="" style="float:left;">Kuulokkeet</a></li>
-	</ul>
+<div class="navbar">
+  <a class="active" href="" style="float:left;">Koti</a>
+  <a href="yhteystiedot.html" style="float:left;">INFO</a>
+  <div class="subnav">
+	<button style="float:left;">Kategoria</button>
+	<div class="subnav-content" style="margin-top: 45px;">
+		<a href="" style="float:left;">Tietokoneet</a>
+		<a href="" style="float:left;">Hiiret</a>
+		<a href="" style="float:left;">Kuulokkeet</a>
+	</div>
+  </div>
+  <a href="kirjautuminen.html" style="float:right;">Kirjaudu</a>
+  <a href="ostoskori.html" style="float:right;">Ostoskori</a>
 </div>
 
 <div class="bottomnav">
@@ -89,16 +111,5 @@ li button:hover {
     <h4>Verkkokauppa - 24/7</h4>
 </div>
 
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
 </body>
 </html>
