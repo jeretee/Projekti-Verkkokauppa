@@ -12,7 +12,6 @@ body {
 }
 
 .topnav {
-  overflow: hidden;
   background-color: gray;
 }
 
@@ -72,7 +71,7 @@ button {
 
 .subnav-content a:hover {
   background-color: green;
-  color: black;
+  color: white;
 }
 
 .subnav:hover .subnav-content {
@@ -82,8 +81,9 @@ button {
 </head>
 <body>
 
-<div class="topnav">
-  <h2>Tietokonekauppa <img src="tietokone.png" style="width:50px;height:50px;float:right;"></h2>
+<div class="topnav" style="padding:1px;">
+	<img src="tietokone.png" style="width:68px;height:68px;float:right;">
+	<h2>Tietokonekauppa </h2>
 </div>
 
 <div class="navbar">
@@ -92,9 +92,9 @@ button {
   <div class="subnav">
 	<button style="float:left;">Kategoria</button>
 	<div class="subnav-content" style="margin-top: 45px;">
-		<a href="" style="float:left;">Tietokoneet</a>
-		<a href="" style="float:left;">Hiiret</a>
-		<a href="" style="float:left;">Kuulokkeet</a>
+		<a href="tietokoneet.html" style="float:left;">Tietokoneet</a>
+		<a href="hiiret.html" style="float:left;">Hiiret</a>
+		<a href="kuulokkeet.html" style="float:left;">Kuulokkeet</a>
 	</div>
   </div>
   <a href="kirjautuminen.html" style="float:right;">Kirjaudu</a>
