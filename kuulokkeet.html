@@ -39,17 +39,56 @@ li a:hover {
   margin-top: 650px;
   background-color: gray;
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: 15px;
+  text-align: center;
+  font-family: arial;
+  padding: 20px;
+  float:left;
+}
+
+.price {
+  color: black;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 9px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 11px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
 </style>
 
 <body>
 
 <div class="topnav" style="padding:1px;">
-	<img src="tietokone.png" style="width:68px;height:68px;float:right;">
+	<img src="kuulokkeet.png" style="width:68px;height:68px;float:right;">
 	<h2>Tietokonekauppa </h2>
 </div>
 <ul>
   <li><a class="active" href="verkkokauppa.html" style="float:left;">Koti</a></li>
 </ul>
+
+<div class="card">
+  <img src="kuulokkeet1.png" alt="Denim Jeans" style="width:100%">
+  <h2>Kuulokkeet</h2>
+  <p class="price">$69.99</p>
+  <p>Soveltuu hyvin opiskelu/työ kuulokkeiksi.</p>
+  <p><button>Lisää koriin</button></p>
+</div>
 
 <div class="bottomnav">
     <h2>Yhteystiedot</h2>
