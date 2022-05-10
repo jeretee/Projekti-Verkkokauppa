@@ -87,7 +87,12 @@ li a:hover {
   <h2>Langaton hiiri</h2>
   <p class="price">$49.99</p>
   <p>Hiiri sopii hyvin opiskeluun/työhön.</p>
-  <p><button>Lisää koriin</button></p>
+  <p>    
+    <form action="ostoskori.html" method="GET">
+    <input type="hidden" value="hiiri" name="serialNumber"/>
+    <button type="submit">Lisää koriin</button>
+    </form>
+  </p>
 </div>
 
 <div class="bottomnav">
@@ -102,4 +107,3 @@ li a:hover {
 
 </body>
 </html>
-   
