@@ -87,7 +87,12 @@ li a:hover {
   <h2>Kuulokkeet</h2>
   <p class="price">$69.99</p>
   <p>Soveltuu hyvin opiskelu/työ kuulokkeiksi.</p>
-  <p><button>Lisää koriin</button></p>
+  <p>    
+    <form action="ostoskori.html" method="GET">
+    <input type="hidden" value="kuulokkeet" name="serialNumber"/>
+    <button type="submit">Lisää koriin</button>
+    </form>
+  </p>
 </div>
 
 <div class="bottomnav">
