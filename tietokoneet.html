@@ -83,27 +83,42 @@ li a:hover {
 </ul>
 
 <div class="card">
-  <img src="tietokone1.png" alt="Denim Jeans" style="width:100%">
+  <img src="tietokone1.png" style="width:100%">
   <h2>Hyvä tietokone</h2>
   <p class="price">$99.99</p>
   <p>Hyvä opiskeluun/töihin.</p>
-  <p><button>Lisää koriin</button></p>
+  <p>		
+    <form action="ostoskori.html" method="GET">
+    <input type="hidden" value="hyvatietokone" name="serialNumber"/>
+    <button type="submit">Lisää koriin</button>
+    </form>
+  </p>
 </div>
 
 <div class="card">
-  <img src="tietokone1.png" alt="Denim Jeans" style="width:100%">
+  <img src="tietokone1.png" style="width:100%">
   <h2>Uusi tietokone</h2>
   <p class="price">$79.99</p>
   <p>Hyvä pelailulle.</p>
-  <p><button>Lisää koriin</button></p>
+  <p>
+    <form action="ostoskori.html" method="GET">
+    <input type="hidden" value="uusitietokone" name="serialNumber"/>
+    <button type="submit">Lisää koriin</button>
+    </form>
+  </p>
 </div>
 
 <div class="card">
-  <img src="tietokone1.png" alt="Denim Jeans" style="width:100%">
+  <img src="tietokone1.png" style="width:100%">
   <h2>Halpa läppäri</h2>
   <p class="price">$59.99</p>
   <p>Halpa ja kevyt kone.</p>
-  <p><button>Lisää koriin</button></p>
+  <p>    
+    <form action="ostoskori.html" method="GET">
+    <input type="hidden" value="halpalappari" name="serialNumber"/>
+    <button type="submit">Lisää koriin</button>
+    </form>
+  </p>
 </div>
 
 <div class="bottomnav">
